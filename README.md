@@ -30,7 +30,7 @@ The more enemies you shoot the higher your score will be.
 
 Whats your HighScore!?
 
-Play here [Game](https://yinkamerit.github.io/)
+Play here [Game](https://yinkamerit.github.io/JS-DuckHunt/)
 
 ### There is one main game modes
 
