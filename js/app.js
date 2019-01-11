@@ -184,14 +184,14 @@ $(document).ready(function(){
   // Creates an on screen countdown
 
   function timer(){
-    var sec = 70;
+    var sec = 75;
 
     var timerCountdown = setInterval(
     function(){
       //Add the Countdown to corner of screen
       $('.timer').html(sec+"s");
       sec--;
-      if (sec == 69) {
+      if (sec == 74) {
         intro[0].play();
         quack[0].play();
       }
