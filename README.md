@@ -162,8 +162,8 @@ Examples of this would be the dog laughing event added with the shot is missed t
 Another potential bug is the time delay in the audio when a shot is fired.There is currently a delay of 1s therefore two proceding shots wont sound one after the other instead the sound play again on the 4 shot.
 
 These are future task that could be completed to improve the functionality of the game.
-<!--
+
 ##### Potential Features:
 Potential features could be adding more events for the bird flying animations and interations with the dog.
 
-Also including an interface that counts the ammunition and limits how many the user has.-->
+Also including an interface that counts the ammunition and limits how many the user has.
