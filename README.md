@@ -64,7 +64,7 @@ A couple of issues where present when trying the form animate the intro scene of
 
 With the sprite sheet for the dog not containing an consistent height and pixel pixel.
 
-Overcame the by running the aninmation with a iteration of 1.9 and while slightly cropping the image.
+Overcame by running the aninmation with a iteration of 1.9 and while slightly cropping the image.
 
 ```css
 #dog {
