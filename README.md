@@ -31,7 +31,7 @@ Whats your HighScore!?
 
 Play here [Game](https://yinkamerit.github.io/)
 
-### There is ine main game modes
+### There is one main game modes
 
 #### Waves:
 
@@ -101,4 +101,29 @@ Overcame by running the aninmation with a iteration of 1.9 and while slightly cr
 
 ```
 
-Including the lines of code allowed for a smooth animation for the walking across the screen
+Including these lines of code allowed for a smooth animation for the walking across the screen
+
+##### Image Positioning 
+
+Initial ideas were to position the ducks behind the background.However this posed many problems with an expected solution of the css function
+
+```
+z-index: -1;
+
+```
+not solving the problem.
+
+Instead requiring and overlay of the grass.png on top of the backgroun image. This was succesfully achieved with the css:
+
+```css
+body:after {
+display:inline-block;
+padding-bottom: 10px;
+content: '';
+background-image: url('images/grass.png');
+background-size: cover;
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 175px;
+```
