@@ -67,8 +67,38 @@ With the sprite sheet for the dog not containing an consistent height and pixel 
 Overcame the by running the aninmation with a iteration of 1.9 and while slightly cropping the image.
 
 ```css
-  animation: walk 2s steps(5) 1.9, dogMove 3.8s linear; 
+#dog {
+  position: absolute;
+  background: url('images/dogwalk.png');
+  top: 520px;
+  width: 182px;
+  height: 171px;
+  animation: walk 2s steps(5) 1.9, dogMove 3.8s linear;
   animation-fill-mode: forwards;
+}
+
+@keyframes walk {
+  0% {
+    background-position: 910px;
+  }
+  100% {
+    background-position: 0px;
+  }
+}
+
+@keyframes dogMove {
+  0% {
+    transform: translateX(-100px);
+  }
+  10% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(300px);
+    overflow: hidden;
+  } 
+}
+
 ```
 
 Including the lines of code allowed for a smooth animation for the walking across the screen
