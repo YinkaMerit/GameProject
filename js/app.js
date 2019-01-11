@@ -166,10 +166,7 @@ $(document).ready(function(){
       clearInterval(gameRunning);
       clearInterval(timerCountdown);
       $('.timer').remove();
-
     }
-
-
   }
 
   // Removes the current class of the ducks and add the shot class
