@@ -18,7 +18,7 @@ The functionality has been implemented using the following features:
 
 ## Introduction:
 
-With this JavaScript version of DcukHunt.The object is simply to collect as much point as possible. 
+With this JavaScript version of DcukHunt.The objective is simply to collect as much point as possible. 
 
 Aiming for the high score of 7000!
 
@@ -52,13 +52,14 @@ Shoot them down!
 
 Use your mouse to control the direction the you are firing. 
 
+## Development
 ### Issues:
 
 * Animation
 * Image positioning
 * Audio
 
-##### Animation
+##### Animation:
 
 A couple of issues where present when trying the form animate the intro scene of the duck.
 
@@ -103,7 +104,7 @@ Overcame by running the aninmation with a iteration of 1.9 and while slightly cr
 
 Including these lines of code allowed for a smooth animation for the walking across the screen
 
-##### Image Positioning 
+##### Image Positioning:
 
 Initial ideas were to position the ducks behind the background.However this posed many problems with an expected solution of the css function
 
@@ -127,3 +128,27 @@ bottom: 0;
 width: 100%;
 height: 175px;
 ```
+
+##### Audio:
+
+With the limitations of Chrome implementing audio on loadup was particularly difficult. Chrome has an autoplay prevention feature.Therefore setting background music required using the
+
+```jQuery
+setTimeOut(function,time(ms));
+```
+
+With this a timer is created which runs a function that plays the audio if the timer meets a condition e.g. after 1 second.	
+
+```js
+  var title = $('#titlesound');
+  function timer(){
+    var sec = 80;
+    var timerCountdown = setInterval(function(){
+      // console.log(sec);
+      sec--;
+      if (sec == 79) {
+        title[0].play();
+      }}, 100);
+    }
+  timer();
+```	
