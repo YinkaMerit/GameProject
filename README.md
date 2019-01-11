@@ -7,6 +7,7 @@ Duck Hunt is a 1984 light gun shooter video game developed and published by Nint
 
 A simplified version of the game has been created using HTML, CSS and Javascript. The main capabilities is a simple point and click,recording highscore with a specified time limit.
 
+
 ## Implementation
 
 The functionality has been implemented using the following features:
@@ -18,7 +19,7 @@ The functionality has been implemented using the following features:
 
 ## Introduction:
 
-With this JavaScript version of DcukHunt.The objective is simply to collect as much point as possible. 
+With this JavaScript version of DuckHunt.The objective is simply to collect as much point as possible. 
 
 Aiming for the high score of 7000!
 
@@ -137,8 +138,6 @@ With the limitations of Chrome implementing audio on loadup was particularly dif
 setTimeOut(function,time(ms));
 ```
 
-With this a timer is created which runs a function that plays the audio if the timer meets a condition e.g. after 1 second.	
-
 ```js
   var title = $('#titlesound');
   function timer(){
@@ -152,3 +151,19 @@ With this a timer is created which runs a function that plays the audio if the t
     }
   timer();
 ```	
+
+With this a timer is created that	 runs a function that plays the audio if the timer meets a condition e.g. after 1 second.
+
+##### Bugs:
+Some bugs are still present in the current build of the game.
+
+Examples of this would be the dog laughing event added with the shot is missed twice. If the player were to miss again i.e. click on the page where a duck is not present then the event will automatically end without fully loaded the animation.
+
+Another potential bug is the time delay in the audio when a shot is fired.There is currently a delay of 1s therefore two proceding shots wont sound one after the other instead the sound play again on the 4 shot.
+
+These are future task that could be completed to improve the functionality of the game.
+<!--
+##### Potential Features:
+Potential features could be adding more events for the bird flying animations and interations with the dog.
+
+Also including an interface that counts the ammunition and limits how many the user has.-->
